@@ -1,3 +1,12 @@
 This is the first program written while praticing course
 selection on LinkedIn.  This program is designed to inform
 programmers of signed and unsigned values.
+
+
+Currency Practice.
+Doing math operations using int, double, float, and long
+data types can be tricky.  You might find yourself rounding
+up or down in order to achieve your desired output.  The
+BigDecimalRunner class converts a number into a string object
+and then converts it into a BigDecimal object in order to use
+the math functions within that class.
