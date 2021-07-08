@@ -9,4 +9,5 @@ data types can be tricky.  You might find yourself rounding
 up or down in order to achieve your desired output.  The
 BigDecimalRunner class converts a number into a string object
 and then converts it into a BigDecimal object in order to use
-the math functions within that class.
+the math functions within that class.  Added a gitignore
+file to play with it.
