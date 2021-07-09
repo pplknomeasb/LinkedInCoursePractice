@@ -11,3 +11,14 @@ BigDecimalRunner class converts a number into a string object
 and then converts it into a BigDecimal object in order to use
 the math functions within that class.  Added a gitignore
 file to play with it.
+
+Managing character values as primitives.
+CharArrayRunner practices creating objects from strings and
+arrays.
+
+StringPrinter
+The string printer is a hackerrank problem for a programmer.
+The code that is within the program here is functional,
+however, on hackerrank it is not favored.  On Hackerrank, it
+teaches the student that sometimes the line needs to be cleared
+in order for a method like nextLine() can be used appropriately.
