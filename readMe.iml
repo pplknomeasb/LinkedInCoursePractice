@@ -22,3 +22,8 @@ The code that is within the program here is functional,
 however, on hackerrank it is not favored.  On Hackerrank, it
 teaches the student that sometimes the line needs to be cleared
 in order for a method like nextLine() can be used appropriately.
+
+PangramRunner
+A pangram is a string object that contains all letters of the
+alphabet in any order and ignoring spaces and characters
+outside of the alphabet.
