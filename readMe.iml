@@ -40,3 +40,10 @@ test cases to run on a specific class in order too figure if
 the code in the class being tested is working appropriately.
 I am adding JUnit because the majority of employers use TDD
 during their development phase.
+
+Unique Characters
+The Unique Characters program is a codewars challenge that
+requests that a user give the program a given string.  For
+all characters that are unique in the entire string, print
+'(' to the console.  For all characters that occur more than
+once in the string, print ')' to the console.
