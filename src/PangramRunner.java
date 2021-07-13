@@ -28,14 +28,18 @@ public class PangramRunner {
             //If the letter at the index doesn't fall within a and z
             //both capital and lowercase letters,
             else
+                //ignore case and continue indexing
                 continue;
             mark[index] = true;
         }
 
         for(int i = 0; i <=25; i++) {
+
+            //if any of the index's were not changed
+            //to true, then isPangram is changed to
+            //false
             if (mark[i] == false)
                 isPangram = false;
-
         }
 
         return isPangram;
