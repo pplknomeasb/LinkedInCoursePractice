@@ -33,3 +33,10 @@ An Isogram is a string object that has zero repeating
 characters.  The program loops through a given string and
 returns if the statement that was given by the user and
 computes if the string is an isogram or not.
+
+Adding JUnit
+TDD or Test Driven Development is a form of coding that uses
+test cases to run on a specific class in order too figure if
+the code in the class being tested is working appropriately.
+I am adding JUnit because the majority of employers use TDD
+during their development phase.
