@@ -10,17 +10,18 @@ public class IsogramRunner {
         String toLowerCase = str.toLowerCase(Locale.ROOT);
 
         int counter = 0;
+        int index = 0;
 
         //Assuming the statement is an Isogram
         boolean isIsogram = true;
 
-        int index = 0;
 
         for(int i = 0; i < str.length(); i++){
             for(int j = 0; j < str.length(); i++){
-                if(toLowerCase.charAt(j) == toLowerCase.charAt(i)){
+                if(toLowerCase.charAt(j) == toLowerCase.charAt(index)){
                     counter += 1;
                 }
+                index += 1;
                 if(counter > 1){
                     isIsogram = false;
                     break;
@@ -29,6 +30,7 @@ public class IsogramRunner {
 
                 }
             counter = 0;
+            index = 0;
             }
 
 
