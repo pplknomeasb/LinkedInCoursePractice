@@ -17,8 +17,20 @@ public class IsogramRunner {
 
 
         for(int i = 0; i < str.length(); i++){
+
+            if(toLowerCase.charAt(i) == toLowerCase.charAt(index)){
+                counter += 1;
+            }
+
+            if(index == toLowerCase.length()){
+                index = 0;
+            }else{index += 1;}
+
+            if(counter > 1){
+                isIsogram = false;
+            }
             for(int j = 0; j < str.length(); i++){
-                if(toLowerCase.charAt(j) == toLowerCase.charAt(index)){
+                if(toLowerCase.charAt(i) == toLowerCase.charAt(index)){
                     counter += 1;
                 }
                 index += 1;

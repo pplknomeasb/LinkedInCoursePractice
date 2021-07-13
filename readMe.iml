@@ -27,3 +27,9 @@ PangramRunner
 A pangram is a string object that contains all letters of the
 alphabet in any order and ignoring spaces and characters
 outside of the alphabet.
+
+Isogram Runner
+An Isogram is a string object that has zero repeating
+characters.  The program loops through a given string and
+returns if the statement that was given by the user and
+computes if the string is an isogram or not.
