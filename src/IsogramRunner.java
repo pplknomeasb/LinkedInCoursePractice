@@ -4,49 +4,39 @@ import java.util.Scanner;
 public class IsogramRunner {
 
     public static boolean checkIsogram(String str){
-        //Creates an array as long as the alphabet
         //All index's are false values
 
-        String toLowerCase = str.toLowerCase(Locale.ROOT);
+        //converts the entire string to lowercase for ignore case
+        String toLowerCase = str.toLowerCase();
 
+        //Counter initialized to count the number of times a character repeats itself
         int counter = 0;
-        int index = 0;
 
         //Assuming the statement is an Isogram
         boolean isIsogram = true;
 
-
+        //The first loop will act as the index place
         for(int i = 0; i < str.length(); i++){
 
-            if(toLowerCase.charAt(i) == toLowerCase.charAt(index)){
-                counter += 1;
-            }
+            //This loop loops through the entire string per character in the string
+            for(int j = 0; j < str.length(); j++){
 
-            if(index == toLowerCase.length()){
-                index = 0;
-            }else{index += 1;}
-
-            if(counter > 1){
-                isIsogram = false;
-            }
-            for(int j = 0; j < str.length(); i++){
-                if(toLowerCase.charAt(i) == toLowerCase.charAt(index)){
+                //All characters will have a count of at least 1
+                if(toLowerCase.charAt(i) == toLowerCase.charAt(j)){
                     counter += 1;
                 }
-                index += 1;
-                if(counter > 1){
+
+                //If at any point a character repeats itself, the program is instructed to stop and exit
+                //and return false
+                if(counter>1){
                     isIsogram = false;
                     break;
-
-                    }
-
                 }
-            counter = 0;
-            index = 0;
             }
 
-
-
+            //counter always must go back to zero after the 2nd loop exits
+            counter = 0;
+        }
 
 
         return isIsogram;
