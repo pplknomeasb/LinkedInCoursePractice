@@ -47,3 +47,12 @@ requests that a user give the program a given string.  For
 all characters that are unique in the entire string, print
 '(' to the console.  For all characters that occur more than
 once in the string, print ')' to the console.
+
+Persistence Runner
+Persistence is the science of a process that outlives the
+data that created it.  This program takes in a Long value
+and multiplies the numbers at each index to create a new
+value which is lesser than the original number, unless the
+number has a length of one.  If the result of the original
+function has a length of more than 1, the process is repeated
+until the number results with a once character value.
