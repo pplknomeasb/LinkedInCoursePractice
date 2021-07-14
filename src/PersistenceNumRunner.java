@@ -4,17 +4,25 @@ public class PersistenceNumRunner {
     public static Long persistenceCheck(Long n){
 
         var count = 0L;
-        var newNum = n.toString().split("");
+        var multiplier=1l;
 
 
-        do{
-            if(n.toString().length()==1){
-                break;
+
+
+            if(n.toString().length()<=1){
+                //If the strings length has no multipliers, count remains 0
+            }else{
+                do{
+                    var nToString = n.toString().split("");
+                    for (int i = 0; i < nToString.length; i++){
+                        multiplier *= nToString.to
+                    }
+
+                }while();
             }
 
-            var s
 
-        }while();
+
 
 //        do {
 //            String[] numArray = new String[n.toString()];
