@@ -58,3 +58,6 @@ function has a length of more than 1, the process is repeated
 until the number results with a once character value.  The
 first attempt, I attempted to convert the number being
 passed into a string in order to index a position; fail.
+Through research, converting the original number to a string
+gives you the option to split the number up and use "" as
+a regex or separator.

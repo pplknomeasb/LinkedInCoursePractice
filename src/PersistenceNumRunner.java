@@ -3,19 +3,29 @@ import java.util.Scanner;
 public class PersistenceNumRunner {
     public static Long persistenceCheck(Long n){
 
-        Long num = 1L;
+        var count = 0L;
+        var newNum = n.toString().split("");
 
 
-        do {
-            Long[] numArray = new Long[Math.toIntExact(n)];
+        do{
+            if(n.toString().length()==1){
+                break;
+            }
 
-            for(int i = 0; i < num.toString().length(); i++)
+            var s
 
-                num = num * n.toString().charAt(i);
+        }while();
 
-        }while(num.toString().length() > 1 );
+//        do {
+//            String[] numArray = new String[n.toString()];
+//
+//            for(int i = 0; i < num.toString().length(); i++)
+//
+//                num = num * n.toString().charAt(i);
+//
+//        }while(num.toString().length() > 1 );
 
-        return num;
+        return count;
     }
     public static void main(String[] args) {
         System.out.println("This is a codewars problem");
