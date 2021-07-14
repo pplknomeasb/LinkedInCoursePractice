@@ -3,11 +3,17 @@ import java.util.Scanner;
 public class PersistenceNumRunner {
     public static Long persistenceCheck(Long n){
 
-        Long num = 0L;
+        Long num = 1L;
 
 
         do {
-        }while(n.toString().length() > 1 );
+            Long[] numArray = new Long[Math.toIntExact(n)];
+
+            for(int i = 0; i < num.toString().length(); i++)
+
+                num = num * n.toString().charAt(i);
+
+        }while(num.toString().length() > 1 );
 
         return num;
     }

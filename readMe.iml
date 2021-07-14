@@ -55,4 +55,6 @@ and multiplies the numbers at each index to create a new
 value which is lesser than the original number, unless the
 number has a length of one.  If the result of the original
 function has a length of more than 1, the process is repeated
-until the number results with a once character value.
+until the number results with a once character value.  The
+first attempt, I attempted to convert the number being
+passed into a string in order to index a position; fail.
