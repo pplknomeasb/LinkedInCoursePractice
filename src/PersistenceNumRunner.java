@@ -18,13 +18,13 @@ public class PersistenceNumRunner {
             }else{
 
                 do {
-                    for (int i = 0; i < multiplier; i++) {
 
-                        valueBig = new BigDecimal(nToString[i]);
-                        resultBig *= valueBig.;
+                    for (int i = 0; i < multiplier; i++) {
+                        var valueBig = new BigDecimal(nToString[i]).multiply(resultBig);
                         count += 1;
                     }
-                }while(resultBig>9);
+                    multiplier = valueBig.toString().length();
+                }while(multiplier>2);
 //                do{
 //                    var nToString = n.toString().split("");
 //                    System.out.println(nToString);
