@@ -11,15 +11,15 @@ public class PersistenceNumRunner {
         var multiplier=n.toString().length();
         Long count = 0L;
         Long result = 1L;
-        Long[] numbersSplit = {n.longValue()};
-        System.out.println(numbersSplit);
+        String[] numbersSplit = {n.toString()};
+        System.out.println(numbersSplit.length);
         do {
             if(multiplier<=1) {
                 break;
             }else{
                 count +=1;
                 for(int i = 0; i<=multiplier; i++){
-                    result = result * numbersSplit[LongValue(i)];
+                    result = result * BigDecimal(numbersSplit[i]);
                     multiplier = result.toString().length();
                 }
 
